@@ -3,11 +3,12 @@
     <img src="https://raw.githubusercontent.com/erdkse/adminlte-3-react/main/public/img/logo.png" alt="AdminLTE logo" width="75" height="75">
   </a>
 </p>
+<h1 align="center">A React Framework For 4DReplay CMS </h1>
 
-<h1 align="center">Admin LTE 3.2.0 - React 18.2.0 (with experimental features)</h1>
+<h1 align="center">Using (Admin LTE 3.2.0 - React 18.2.0 )</h1>
 
 <p>
-  This repository is a form of original AdminLTE project. It is aim to use AdminLTE template with React.
+  This repository is a form of original 4DReplay project by NohSeongnam. It is aim to use AdminLTE template with React.
 </p>
 <br>
 
