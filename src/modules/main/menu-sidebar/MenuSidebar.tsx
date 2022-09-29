@@ -26,7 +26,7 @@ export const MENU: IMenuItem[] = [
     path: '/blank'
   },
   {
-    name: i18n.t('menusidebar.label.blank'),
+    name: i18n.t('menusidebar.label.create'),
     path: '/create'
   },
   {
