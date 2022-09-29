@@ -1,0 +1,99 @@
+{
+  "login": {
+    "label": {
+      "signIn": "이메일과 비밀번호를 입력하세요",
+      "rememberMe": "기억하기",
+      "forgotPass": "비밀번호 찾기",
+      "registerNew": "회원가입"
+    },
+    "button": {
+      "signIn": {
+        "label": "로그인",
+        "social": "Sign in using {{what}}"
+      },
+      "signUp": {
+        "label": "회원가입",
+        "social": "Sign up using {{what}}"
+      },
+      "signOut": "로그아웃"
+    }
+  },
+  "register": {
+    "alreadyHave": "I already have a membership",
+    "registerNew": "Register a new membership",
+    "label": "Register"
+  },
+  "recover": {
+    "forgotYourPassword": "비밀번호를 잊으셨나요? 여기서 쉽게 새로운 비밀번호를 설정하실수 있습니다.",
+    "oneStepAway": "You are only one step a way from your new password, recover your password now.",
+    "changePassword": "비밀번호 바꾸기",
+    "requestNewPassword": "새로운 비밀번호 요청"
+  },
+  "main": {
+    "label": {
+      "moreInfo": "More info",
+      "follow": "Follow",
+      "aboutMe": "About Me",
+      "education": "Education",
+      "location": "Location",
+      "skills": "Skills",
+      "notes": "Notes",
+      "activity": "Activity",
+      "timeline": "Timeline",
+      "settings": "Settings"
+    }
+  },
+  "header": {
+    "label": {
+      "home": "Home",
+      "contact": "Contact"
+    },
+    "language": {
+      "turkish": "터키어",
+      "english": "영어",
+      "korean": "한국어",
+      "german": "독일어",
+      "french": "프랑스어",
+      "spanish": "스페인어"
+    },
+    "messages": {
+      "ago": "{{quantity}} {{unit}} Ago",
+      "seeAll": "전체보기"
+    },
+    "notifications": {
+      "count": "{{quantity}} 알림",
+      "newMessagesCount": "{{quantity}} 새로운 메시지",
+      "friendRequestsCount": "{{quantity}} friend requests",
+      "reportsCount": "{{quantity}} 새 보고",
+      "seeAll": "전체보기"
+    },
+    "user": {
+      "profile": "프로필",
+      "followers": "Followers",
+      "sales": "Sales",
+      "friends": "Friends"
+    }
+  },
+  "menusidebar": {
+    "label": {
+      "dashboard": "Dashboard",
+      "profile": "Profile",
+      "blank": "Blank",
+      "mainMenu": "Main Menu",
+      "subMenu": "Sub Menu"
+    }
+  },
+  "footer": {
+    "version": "Version",
+    "copyright": "All rights reserved."
+  },
+  "views": {
+    "user": {
+      "profile": "User Profile",
+      "following": "Following"
+    }
+  },
+  "measurement": {
+    "quantityUnit": "{{quantity}} {{unit}}"
+  }
+}
