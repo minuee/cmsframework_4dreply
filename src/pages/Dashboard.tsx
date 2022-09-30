@@ -1,12 +1,54 @@
-import {SmallBox} from '@app/components';
-import React from 'react';
+import React, {useCallback,useState} from 'react';
+import { FullScreen, useFullScreenHandle } from "react-full-screen";
+
 import {ContentHeader} from '@components';
 
+interface FullScreenHandle {
+  active: boolean;
+  // Specifies if attached element is currently full screen.
+
+  enter: () => Promise<void>;
+  // Requests this element to go full screen.
+
+  exit: () => Promise<void>;
+  // Requests this element to exit full screen.
+
+  node: React.MutableRefObject<HTMLDivElement | null>;
+  // The attached DOM node
+}
+
 const Dashboard = () => {
+  const [isFullScreen, setFullScreen] = useState<Boolean>(false);
+  const handle = useFullScreenHandle();
+
+  const reportChange = useCallback((state:any, handle:any) => {
+    if (handle === handle) {
+      console.log('Screen 1 went to', state, handle);
+      setFullScreen(state)
+    }
+  }, [handle]);
+
   return (
     <div>
-      <ContentHeader title="Dashboard" />
+      <FullScreen 
+        handle={handle} 
+        onChange={reportChange}
+      >
+        <div style={{flex:1,width: '100vw', height:'100vh',background: "green",display: isFullScreen ? 'flex' : 'none'}}>
+          <div style={{display:'flex',height:50,width: '100vw',justifyContent:'flex-end',alignItems:'center',backgroundColor:'#ff0000',paddingRight:50}}>
+            {/*  <button onClick={()=> {handle.enter();setFullScreen(true);}}>
+              Switch
+            </button> */}
+            <button onClick={()=> {handle.exit();setFullScreen(false);}}>
+              Exit
+            </button>
+          </div>
+          <div style={{flex:1}}>
 
+          </div>
+        </div>
+      </FullScreen>
+      <ContentHeader title="DashBaord Page" />
       <section className="content">
         <div className="container-fluid">
           <div className="row">
@@ -14,13 +56,16 @@ const Dashboard = () => {
               <div className="small-box bg-info">
                 <div className="inner">
                   <h3>150</h3>
-
                   <p>New Orders</p>
                 </div>
                 <div className="icon">
                   <i className="ion ion-bag" />
                 </div>
-                <a href="/" className="small-box-footer">
+                <a 
+                  onClick={handle.enter}
+                  //href="/" 
+                  className="small-box-footer pointer"
+                >
                   More info <i className="fas fa-arrow-circle-right" />
                 </a>
               </div>
