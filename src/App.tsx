@@ -14,6 +14,7 @@ import {setWindowSize} from '@app/store/reducers/ui';
 import Dashboard from '@pages/Dashboard';
 import Blank from '@pages/Blank';
 import Create from '@app/pages/create';
+import Threed from '@app/pages/threed';
 import SubMenu from '@pages/SubMenu';
 import Profile from '@pages/profile/Profile';
 
@@ -53,6 +54,7 @@ const App = () => {
             <Route path="/sub-menu-1" element={<SubMenu />} />
             <Route path="/blank" element={<Blank />} />
             <Route path="/create" element={<Create />} />
+            <Route path="/threed" element={<Threed />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/" element={<Dashboard />} />
           </Route>

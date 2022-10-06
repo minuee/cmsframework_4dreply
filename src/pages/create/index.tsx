@@ -60,7 +60,7 @@ const Create = () => {
     const onSubmit = (data:any) => console.log(data);
 
     const handleChange = (e:any) => {    
-        console.log('handleChange',e.target.name,e.target.value)
+        //console.log('handleChange',e.target.name,e.target.value)
         if ( e.target.name == 'sw1') {
             setInputs({
                 ...inputs,
@@ -95,24 +95,24 @@ const Create = () => {
     }
 
     const handleChangeFile = (event:any) => {
-        console.log('event.target.files', event.target.files[0].type);
+        //console.log('event.target.files', event.target.files[0].type);
         setImgBase64([]);
         setVideoFile("");
         setImgFile("");
         if ( event.target.files.length > 0 ) {
             if ( event.target.files[0].type.indexOf('video') != -1) {
-                console.log('event.target.files video',event.target.files[0].type.indexOf('video'));
+                //console.log('event.target.files video',event.target.files[0].type.indexOf('video'));
                 setUploadFileType('video');        
                 setVideoFile( URL.createObjectURL(event.target.files[0]) )
             }else if ( event.target.files[0].type.indexOf('image') != -1 ) {
-                console.log('event.target.files image',event.target.files[0].type.indexOf('image'));
+                //console.log('event.target.files image',event.target.files[0].type.indexOf('image'));
                 setUploadFileType('image');
                 setImgFile(event.target.files);
                 let reader = new FileReader();
                 reader.readAsDataURL(event.target.files[0]);
                 reader.onloadend = () => {
                     const base64 = reader.result;
-                    console.log(base64);
+                    //console.log(base64);
                     if (base64) {
                         var base64Sub = base64.toString()
                         setImgBase64(imgBase64 => [...imgBase64, base64Sub]);

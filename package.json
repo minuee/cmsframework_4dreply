@@ -1,5 +1,5 @@
 {
-  "name": "adminlte-3-react",
+  "name": "4dreplay-cms-react",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -29,6 +29,8 @@
     ]
   },
   "dependencies": {
+    "@babylonjs/core": "^5.26.1",
+    "@babylonjs/gui": "^5.26.1",
     "@craco/craco": "6.4.5",
     "@fortawesome/fontawesome-svg-core": "6.2.0",
     "@fortawesome/free-brands-svg-icons": "6.2.0",
@@ -37,6 +39,8 @@
     "@fortawesome/react-fontawesome": "0.2.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
     "@profabric/react-components": "0.1.2",
+    "@react-three/drei": "^9.32.11",
+    "@react-three/fiber": "^8.8.9",
     "@reduxjs/toolkit": "1.8.5",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
@@ -54,9 +58,11 @@
     "node-polyfill-webpack-plugin": "^2.0.1",
     "react": "0.0.0-experimental-f0efa1164-20220901",
     "react-app-rewire-alias": "^1.1.7",
+    "react-babylonjs": "^3.1.11",
     "react-bootstrap": "1.6.1",
     "react-dom": "0.0.0-experimental-f0efa1164-20220901",
     "react-full-screen": "^1.1.1",
+    "react-gridlines": "^1.1.7",
     "react-hook-form": "^7.36.1",
     "react-i18next": "11.18.5",
     "react-icons": "^4.4.0",
@@ -68,6 +74,7 @@
     "redux-logger": "3.0.6",
     "styled-components": "5.3.5",
     "summernote": "./summernote",
+    "three": "^0.145.0",
     "tsconfig-paths-webpack-plugin": "^4.0.0",
     "uuid": "9.0.0",
     "web-vitals": "3.0.1",

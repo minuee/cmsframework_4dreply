@@ -30,6 +30,10 @@ export const MENU: IMenuItem[] = [
     path: '/create'
   },
   {
+    name: i18n.t('menusidebar.label.threed'),
+    path: '/threed'
+  },
+  {
     name: i18n.t('menusidebar.label.mainMenu'),
     children: [
       {

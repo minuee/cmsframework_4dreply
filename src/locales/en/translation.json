@@ -79,6 +79,8 @@
       "dashboard": "Dashboard",
       "profile": "Profile",
       "blank": "Blank",
+      "create": "Create",
+      "threed": "3DTest",
       "mainMenu": "Main Menu",
       "subMenu": "Sub Menu"
     }
